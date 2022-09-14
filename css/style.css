@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* PAG INDEX */
+.bodyind{
+    background-image: linear-gradient(to bottom, rgb(165, 7, 7), black);
+}
+
+.tituloh1{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family:fantasy;
+    font-size: 95px;
+}
+
+.tituloh3{
+    text-align: center;
+ color: silver;
+ font-size: 55px;
+}
+
+.tituloh5{
+    text-align: center;
+    color: silver;
+}
+
+.container{
+   padding-top: 20px;
+}
+
+.grax{
+    font-size: 40px;
+    text-align: center;
+    color: silver;
+}
+
+/* PAG COMPRASTE */
+.bodycom{
+    background-image: linear-gradient(to bottom, rgb(165, 7, 7), black);
+    height: 100%;
+}
+.h1compra{
+    color: cornflowerblue;
+    font-size: 60px;
+    text-align: center;
+}
+.botonVolver{
+margin-left: 42%;
+margin-top: 20px;
+border-radius: 30px;
+padding: 20px;
+background-color: rgba(255, 255, 0, 0.411)
+   
+}
+.cancelar{
+    text-decoration: none;
+    color: silver;
+    font-size: 20px;
+}
