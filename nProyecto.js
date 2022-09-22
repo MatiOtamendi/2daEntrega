@@ -50,6 +50,24 @@ let vehiculos = [
   
 ];
 
+function esMayorDeEdad() {
+  let edad = localStorage.getItem("edad");
+  if (edad == null) {
+    edad = prompt("Por favor, ingrese su edad (valor numérico)");
+  }
+  localStorage.setItem("edad", edad);
+  if (edad < 18) {
+    alert("Eres menor de edad, no puedes alquilar, vuelve cuando tengas 18 años o mas.");
+    return false;
+  } else {
+    alert(
+      "Bienvenid@!!, podes ver nuestro catálogo de vehiculos y alquilar el que te guste!"
+    );
+    return true;
+  }
+};
+esMayorDeEdad();
+
 const tablaVehiculos = () => {
     let contenedor = document.getElementById("container");
     vehiculos.forEach((vehiculo) => {
