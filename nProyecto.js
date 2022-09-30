@@ -66,7 +66,13 @@ function esMayorDeEdad() {
   //   return true;
   // }
   /*APLICO OPERADOR TERNARIO SUPLANTANDO LINEAS 59 A 67*/
-edad < 18? alert("Eres menor de edad, no puedes alquilar, vuelve cuando tengas 18 años o mas.") : alert(  "Bienvenid@!!, podes ver nuestro catálogo de vehiculos y alquilar el que te guste!");
+edad < 18? alert("Eres menor de edad, no puedes alquilar, vuelve cuando tengas 18 años o mas.") : Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Bienvenid@! Podes ver nuestro catalogo y reservar el vehiculo que te guste!',
+  showConfirmButton: true,
+  timer: 5000
+});
 };
 esMayorDeEdad();
 
@@ -88,5 +94,5 @@ const tablaVehiculos = () => {
 tablaVehiculos();
 
 const reservarVehiculo = () => {
-    alert("Reservaste el vehículo!");
+ alert("Felicitaciones! Reservaste tu vehículo!")
 };
